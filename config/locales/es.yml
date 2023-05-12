@@ -1,0 +1,62 @@
+es:
+  app_name: 'Vendelo'
+  meta_title: 'Compra y vende productos de segunda mano'
+  activerecord:
+    models:
+      product: Producto
+    attributes:
+      product:
+        title: 'Titulo'
+        description: 'Descripcion'
+        price: 'Precio'
+        photo: 'Foto'
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: 'no puede estar vacio'
+            description:
+              blank: 'no puede estar vacio'
+            price:
+              blank: 'no puede estar vacio'
+  authentication:
+    users:
+      create:
+        created: 'Tu cuenta ha sido creada'
+    sessions:
+      create:
+        created: 'Bienvenido!'
+        failed: 'Error al iniciar sesion.'
+  common:
+    confirm: 'Estas seguro?'
+    not_logged_in: 'Tines que hacer login o crearte un cuenta'
+  shared:
+    header:
+      login: 'Acceder'
+      register: 'Registrarse'
+      logout: 'Salir'
+  products:
+    edit:
+      title: 'Editar producto'
+    new:
+      title: 'Agregar producto'
+    index:
+      title: 'Productos: '
+      all: 'Todos'
+      min_price: 'Precio minimo'
+      max_price: 'Precio maximo'
+      query_search: 'Que deseas buscar?'
+      expensive: 'Mas caros primero'
+      cheapest: 'Mas baratos primero'
+      newest: 'Agregados recientemente'
+    create:
+      created: 'Tu producto se ha creado correctamente'
+    update:
+      updated: 'Tu producto se ha actualizado correctamente'
+    destroy:
+      destroy: 'Tu producto se ha eliminado correctamente'
+  user_mailer:
+    welcome:
+      welcome_message: 'Hey %(username), bienvenid@ a vendelo'
+      subject: 'Welcome to SellIT'

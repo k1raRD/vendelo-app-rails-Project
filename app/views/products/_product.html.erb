@@ -1,0 +1,8 @@
+  <%= link_to product_path(product), class: 'product bg-white mb-2 sm:w-[calc(33.33333%_-_.5rem)] lg:w-[calc(25%_-_.5rem)]','data-turbo-frame': '_top' do%>
+    <%= image_tag product.photo.attached? ? product.photo : 'Placeholder.webp', class: "w-full h-60 object-cover"%>
+    <div class="m-2">
+      <span class='price font-bold text-xl'><%= product.price%>$</span>
+      <h2 class='title'> <%= product.title %> </h2>
+      <p class='description text-gray-500 text-sm mt-2'> <%= product.description%> </p>
+    </div>
+  <% end %>

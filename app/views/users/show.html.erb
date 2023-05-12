@@ -1,0 +1,4 @@
+<%= @user.username %>
+<%= params[:username]%>
+
+<%= turbo_frame_tag :products, src: products_path(user_id: @user.id)%>
